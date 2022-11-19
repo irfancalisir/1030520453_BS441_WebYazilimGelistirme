@@ -11,6 +11,8 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
+
+          //teknik hazırlıklar yapılıyor 19.10.22
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
