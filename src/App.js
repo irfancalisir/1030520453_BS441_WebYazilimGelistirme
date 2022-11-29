@@ -12,7 +12,7 @@ function App() {
         </p>
         <a
 
-          //teknik hazırlıklar yapılıyor 19.10.22
+          //teknik hazırlıklar yapılıyor 29.10.22
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
