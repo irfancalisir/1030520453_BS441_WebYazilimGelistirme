@@ -12,6 +12,10 @@ export const Tekkisi = () => {
         console.log(e.target.value);
     }
     const battle = () => {
+        if(secim === ''){
+            alert("Seçim Yapmadın!")
+            return;
+        }
         const pcChoice = Math.floor(Math.random() * 3);
         const pcArray = ["TAS", "KAGIT", "MAKAS"];
         const pc = pcArray[pcChoice];
@@ -33,7 +37,7 @@ export const Tekkisi = () => {
             <p>Taş Kağıt Makas?</p>
             <div onChange={handleChoice}>
                 <input type="radio" value="TAS" name="sec"/> Taş <img style={{width: "150px"}} src={tas} className="Resim" alt="Tas" />
-                <input type="radio" value="KAGIT" defaultChecked name="sec"/> Kağıt <img style={{width: "150px"}} src={kagit} className="Resim" alt="kagit" />
+                <input type="radio" value="KAGIT" name="sec"/> Kağıt <img style={{width: "150px"}} src={kagit} className="Resim" alt="kagit" />
                 <input type="radio" value="MAKAS" name="sec"/>Makas <img style={{width: "150px"}} src={makas} className="Resim" alt="makas" />
             </div><br/>
             <button onClick={battle}>
