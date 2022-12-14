@@ -34,15 +34,24 @@ export const Tekkisi = () => {
 
     return(
         <div>
-            <p>Taş Kağıt Makas?</p>
-            <div onChange={handleChoice}>
-                <input type="radio" value="TAS" name="sec"/> Taş <img style={{width: "150px"}} src={tas} className="Resim" alt="Tas" />
-                <input type="radio" value="KAGIT" name="sec"/> Kağıt <img style={{width: "150px"}} src={kagit} className="Resim" alt="kagit" />
-                <input type="radio" value="MAKAS" name="sec"/>Makas <img style={{width: "150px"}} src={makas} className="Resim" alt="makas" />
-            </div><br/>
-            <button onClick={battle}>
-                SEÇ
-            </button>
+            <div>
+                <p>Taş Kağıt Makas?</p>
+                <div onChange={handleChoice}>
+                    <input type="radio" value="TAS" name="sec"/> Taş <img style={{width: "150px"}} src={tas} className="Resim" alt="Tas" />
+                    <input type="radio" value="KAGIT" name="sec"/> Kağıt <img style={{width: "150px"}} src={kagit} className="Resim" alt="kagit" />
+                    <input type="radio" value="MAKAS" name="sec"/>Makas <img style={{width: "150px"}} src={makas} className="Resim" alt="makas" />
+                </div>
+            </div>
+            <div style={{paddingTop: "8px"}}>
+                <button style={{fontSize: "25px", backgroundColor:"green",color:"white"}} onClick={battle}>
+                        SAVAŞ!
+                </button>
+            </div>
+            <div style={{paddingTop: "35px"}}>
+                <a href="/">
+                    <button style={{fontSize: "20px"}}>Anasayfaya Dön</button>
+                </a>
+            </div>
 
       </div>
     )

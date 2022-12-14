@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { Home } from './Home';
 import { Tekkisi } from './Tekkisi';
+import { Ikikisi } from './Ikikisi';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
       <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/tekkisi" element={<Tekkisi/>}/>
+          <Route exact path="/ikikisi" element={<Ikikisi/>}/>
       </Routes>
     </BrowserRouter>
 
