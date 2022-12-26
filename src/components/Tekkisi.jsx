@@ -1,7 +1,7 @@
 import { useState } from "react";
-import tas from './tas.png';
-import kagit from './kagit.png';
-import makas from './makas.png';
+import tas from '../fotolar/tas.png';
+import kagit from '../fotolar/kagit.png';
+import makas from '../fotolar/makas.png';
 
 
 export const Tekkisi = () => {

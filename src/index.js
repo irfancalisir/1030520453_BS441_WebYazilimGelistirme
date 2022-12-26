@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import { Home } from './Home';
-import { Tekkisi } from './Tekkisi';
-import { Ikikisi } from './Ikikisi';
+import { Home } from './components/Home';
+import { Tekkisi } from './components/Tekkisi';
+import { Ikikisi } from './components/Ikikisi';
+import { Hayattakalma } from './components/Hayattakalma';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +17,7 @@ root.render(
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/tekkisi" element={<Tekkisi/>}/>
           <Route exact path="/ikikisi" element={<Ikikisi/>}/>
+          <Route exact path="/hayattakalma" element={<Hayattakalma/>}/>
       </Routes>
     </BrowserRouter>
 
